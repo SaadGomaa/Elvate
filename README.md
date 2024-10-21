@@ -1,27 +1,48 @@
-# Elevate
+# Supermarket Web Application
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 17.3.8.
+This is a Supermarket web application built using **Angular**. The application displays a list of products and categories, and users can browse, search, and filter products. Additionally, when a user clicks on a product image, detailed information about the product is displayed.
 
-## Development server
+## Features
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The application will automatically reload if you change any of the source files.
+- **Products and Categories:** 
+  - The app fetches a list of products and categories from a service.
+  - Products are displayed with key information (image, title, price, and rating).
+  - Categories allow users to filter products.
+  
+- **Product Details:**
+  - Clicking on a product shows detailed information about the product.
+  
+- **Search Functionality:**
+  - Users can search for products by name using a search bar.
+  
+- **Error Handling with Interceptors:**
+  - The project uses **HTTP Interceptors** to centrally manage errors that occur during API requests. This ensures that any issues like failed network requests or server errors are handled consistently, improving the user experience.
 
-## Code scaffolding
+- **Organized Structure:**
+  - The project uses `services`, `interceptors`, `interfaces`, and `pipes` to maintain clean and organized code.
 
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
+- **API Integration:**
+  - All product and category data is fetched from a remote API. Any errors during these requests are caught and handled using `HTTP Interceptors`.
 
-## Build
+## Technologies Used
 
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory.
+- **Angular** (Version 17.3.8)
+- **TypeScript**
+- **RxJS**
+- **Angular Services, Pipes, and Interceptors**
 
-## Running unit tests
+## Live Demo
 
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
+You can check out the live demo of the project [here](https://elvate.netlify.app/products).
 
-## Running end-to-end tests
+## Getting Started
 
-Run `ng e2e` to execute the end-to-end tests via a platform of your choice. To use this command, you need to first add a package that implements end-to-end testing capabilities.
+Follow these instructions to get a copy of the project up and running on your local machine.
 
-## Further help
+### Prerequisites
 
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI Overview and Command Reference](https://angular.io/cli) page.
+- Node.js and npm installed on your machine.
+- Angular CLI installed globally. You can install it using the following command:
+
+  ```bash
+  npm install -g @angular/cli
