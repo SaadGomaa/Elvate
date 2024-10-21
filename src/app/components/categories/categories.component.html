@@ -1,0 +1,11 @@
+<section class="my-3 text-center">
+    <div class="row g-3">
+        <h1 class="text-center fw-bolder mb-4">Choose Your Categories</h1>
+        @for (category of categoriesList; track $index) {
+        <div class="resp">
+            <div class="product p-2 cr" [routerLink]="['/catdetials',category]">
+                <h2 class="h6 text-main mt-2 fw-bold">{{ category}}</h2>
+            </div>
+        </div>
+        }
+    </div>
